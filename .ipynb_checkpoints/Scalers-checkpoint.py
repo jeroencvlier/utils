@@ -45,10 +45,10 @@ class MinMax3():
         if to_array == True:
             if len(df)==1:
                 # torch.Tensor(df.values.astype(np.float32)).unsqueeze(0)
-                return df.to_numpy()
+                return df.to_numpy(dtype=np.float32)
             else:
                 # torch.Tensor(df.values.astype(np.float32))
-                return df.to_numpy()
+                return df.to_numpy(dtype=np.float32)
         else:
             return df
         
